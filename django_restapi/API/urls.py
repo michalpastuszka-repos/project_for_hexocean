@@ -1,8 +1,12 @@
-from django.urls import path
-from .views import ImagesViewSet
-from django.conf import settings
-from django.conf.urls.static import static
+from .views import ImagesViewSet, create_link
+from django.urls import path, include
+from rest_framework import routers
 
+
+# router = routers.DefaultRouter()
+# router.register(r'test/', ImagesViewSet, basename='test')
 urlpatterns = [
-    path('api/', ImagesViewSet.as_view(), name='get_api'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('get_api/', ImagesViewSet.as_view(), name='get_api'),
+
+    path('create_link/', create_link, name='link')
+]
