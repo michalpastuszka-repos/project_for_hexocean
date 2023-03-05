@@ -23,7 +23,7 @@ This project allows the upload of images for the built-in 3 types of users, i.e.
 To run app using Docker Technology You should use this command:
 ```docker-compose up -d --build```
 Clone the repo:
-```docker-compose up -d --build```
+```git clone https://github.com/michalpastuszka-repos/project_for_hexocean```
 
 ## Sources
 This app is inspired by Devs-Mentoring.pl
