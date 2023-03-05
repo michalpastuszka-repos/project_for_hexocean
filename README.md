@@ -10,3 +10,13 @@
 <b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 </details>
+## Technologies
+<ul>
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+```commandline
+Komendy w tym znaczniku zostaną podświetlone i sformatowane
+```
+```python lambda n: n if n <= 1 else fib(n – 1) + fib(n - 2)```
