@@ -22,6 +22,8 @@ This project allows the upload of images for the built-in 3 types of users, i.e.
 ## Setup
 To run app using Docker Technology You should use this command:
 ```docker-compose up -d --build```
+Clone the repo:
+```docker-compose up -d --build```
 
 ## Sources
 This app is inspired by Devs-Mentoring.pl
