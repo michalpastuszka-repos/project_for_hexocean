@@ -1,4 +1,4 @@
-# Content of Project - Django RESTAPI for HexOcean
+# Django RESTAPI for HexOcean
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -8,8 +8,7 @@
 ## General info
 <details>
 <summary>Click here to see general information about <b>Project</b>!</summary>
-<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
-ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+<b>Lorem ipsum</b>. This project allows the upload of images for the built-in 3 types of users, i.e. Basic, Premium, Enterprise. Depending on the type of user, a particular user may upload image with different heights (200px,400px or original size image).
 </details>
 
 ## Technologies
