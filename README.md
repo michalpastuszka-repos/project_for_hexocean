@@ -1,4 +1,4 @@
-# Content of Project
+# Content of Project - Django RESTAPI for HexOcean
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -12,11 +12,14 @@ ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 </details>
 ## Technologies
 <ul>
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
+<li>Python</li>
+<li>Django</li>
+<li>Django REST Framework</li>
+<li>Docker</li>
 </ul>
 ```commandline
 Komendy w tym znaczniku zostaną podświetlone i sformatowane
 ```
 ```python lambda n: n if n <= 1 else fib(n – 1) + fib(n - 2)```
+## Sources
+This app is inspired by Devs-Mentoring.pl
