@@ -7,8 +7,8 @@
 
 ## General info
 <details>
-<summary>Click here to see general information about <b>Project</b>!</summary>
-<b>Lorem ipsum</b>. This project allows the upload of images for the built-in 3 types of users, i.e. Basic, Premium, Enterprise. Depending on the type of user, a particular user may upload image with different heights (200px,400px or original size image).
+<summary>Click here to see general information about <b>Django RESTAPI for HexOcean</b>!</summary>
+This project allows the upload of images for the built-in 3 types of users, i.e. Basic, Premium, Enterprise. Depending on the type of user, a particular user may upload image with different heights (200px,400px or original size image).
 </details>
 
 ## Technologies
