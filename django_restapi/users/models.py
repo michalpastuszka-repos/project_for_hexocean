@@ -24,7 +24,7 @@ class Images(models.Model):
 
     title = models.CharField(max_length=250)
     image = models.ImageField(upload_to='profile_pics', blank=True, null=True)
-    created = models.DateTimeField(default=timezone.now())
+    created = models.DateTimeField(auto_now_add=timezone.now())
     image_200 = models.ImageField(upload_to='profile_pics', blank=True, null=True)
     image_400 = models.ImageField(upload_to='profile_pics', blank=True, null=True)
 
@@ -41,7 +41,7 @@ class Images(models.Model):
         img_200.save(self.image_200.path)
         img_400.save(self.image_400.path)
 
-
+# model połączony dla Images i Profiles
 class ImageProfile(models.Model):
-    profile = models.ForeignKey('users.Profiles', on_delete=models.CASCADE)
-    image = models.ForeignKey('users.Images', on_delete=models.CASCADE)
+    profile = models.ForeignKey('users.Profiles', on_delete=models.CASCADE, blank=True, null=True)
+    image = models.ForeignKey('users.Images', on_delete=models.CASCADE, blank=True, null=True)

@@ -1,15 +1,15 @@
-from users.models import ImageProfile, Profiles, Images
+from users.models import Images, Profiles, ImageProfile
 from .serializers import ImagesBasicUserSerializer, ImagesPremiumUserSerializer, ImagesEnterpriseUserSerializer, \
     LinkSerializer
-from rest_framework.viewsets import ModelViewSet
 from rest_framework.views import APIView
-from django.core.signing import Signer
+from django.core.signing import Signer, BadSignature
 from django.urls import reverse
 from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from datetime import datetime, timedelta
 from rest_framework.decorators import api_view, action
 from rest_framework.response import Response
+
 
 
 class ImagesViewSet(APIView):
@@ -75,7 +75,7 @@ def create_link(request):
 def verify_link(request, signed_url):
     signer = Signer()
     try:
-        signature = signer.unsign(urlsafe_base64_decode(signed_url))
+        signature = signer.unsign(urlsafe_base64_decode(signed_url).decode())
         if request.session.get('signed_url') == signed_url and datetime.now() < request.session.get('expire_date'):
             data = {
                 'status': 'OK',
@@ -84,5 +84,5 @@ def verify_link(request, signed_url):
             return Response(data)
         else:
             return Response({'status': 'ERROR', 'message': 'Nieprawidłowy lub wygasły link'}, status=400)
-    except signer.BadSignature:
+    except BadSignature:
         return Response({'status': 'ERROR', 'message': 'Nieprawidłowy link'}, status=400)

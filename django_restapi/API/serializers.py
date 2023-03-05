@@ -1,22 +1,22 @@
 from rest_framework import serializers
-from users.models import ImageProfile, Images
+from users.models import ImageProfile
 
 
 class ImagesBasicUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Images
+        model = ImageProfile
         fields = ('user', 'title', 'image_200')
 
 
 class ImagesPremiumUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Images
+        model = ImageProfile
         fields = ('user', 'title', 'image_200', 'image_400', 'image')
 
 
 class ImagesEnterpriseUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Images
+        model = ImageProfile
         fields = ('user', 'title', 'image_200', 'image_400', 'image')
 
 
