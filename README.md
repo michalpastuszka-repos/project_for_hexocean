@@ -25,11 +25,5 @@ To run app using Docker Technology You should use this command:
 Clone the repo:
 ```git clone https://github.com/michalpastuszka-repos/project_for_hexocean```
 
-## Application View
-<img src=”https://user-images.githubusercontent.com/94476796/222969787-60603cf5-d357-4139-a301-9717566a6c44.PNG” width=”50%” height=”50%”></img>
-<img src=”https://user-images.githubusercontent.com/94476796/222969789-5ff1ab8c-b58e-4d7c-bbf7-0d449a22cf7f.PNG” width=”50%” height=”50%”></img>
-<img src=”https://user-images.githubusercontent.com/94476796/222969790-cb8ee5f4-7b02-4d9b-9e28-fd5661d295e9.PNG” width=”50%” height=”50%”></img>
-<img src=”https://user-images.githubusercontent.com/94476796/222969792-609a7604-9d6b-4a7d-8626-707093f8220b.PNG” width=”50%” height=”50%”></img>
-
 ## Sources
 This app is inspired by Devs-Mentoring.pl
