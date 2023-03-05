@@ -20,7 +20,8 @@ This project allows the upload of images for the built-in 3 types of users, i.e.
 </ul>
 
 ## Setup
-```python lambda n: n if n <= 1 else fib(n – 1) + fib(n - 2)```
+To run app using Docker Technology You should use this command:
+```docker-compose up -d --build```
 
 ## Sources
 This app is inspired by Devs-Mentoring.pl
