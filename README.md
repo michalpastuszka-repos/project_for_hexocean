@@ -1,6 +1,5 @@
 # Content of Project
 * [General info](#general-info)
-## General info
 <details>
 <summary>Click here to see general information about <b>Project</b>!</summary>
 <b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
